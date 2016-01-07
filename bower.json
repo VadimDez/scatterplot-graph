@@ -1,0 +1,17 @@
+{
+  "name": "scatterplot-graph",
+  "homepage": "https://github.com/VadimDez/scatterplot-graph",
+  "authors": [
+    "Vadym Yatsyuk <vasp3d@gmail.com>"
+  ],
+  "description": "d3 project",
+  "main": "app.js",
+  "moduleType": [],
+  "keywords": [
+    "d3js"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "d3": "~3.5.12"
+  }
+}
