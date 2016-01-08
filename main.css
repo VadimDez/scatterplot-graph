@@ -1,8 +1,84 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #E5E5E5;
+}
+header {
+    padding: 20px 10px;
+    background-color: #ffffff;
+}
+header .row {
+    width: 100%;
+    display: table;
+}
+header .row .title {
+    display: table-cell;
+}
+header .row .author {
+    display: table-cell;
+    text-align: right;
+}
+header .row .author a {
+    text-decoration: none;
+}
+section {
+    margin-top: 20px;
+}
+.container {
+    width: 1160px;
+    margin: 0 auto;
+}
+.container .chart {
+    width: 960px;
+    height: 500px;
+    background-color: #fff;
+}
+
+.container .description {
+    padding: 10px;
+    width: 180px;
+    height: 480px;
+    background-color: #F9F9F9;
+    float: right;
+    text-align: center;
+}
+.container .description h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+.container .description .points {
+    padding-left: 30px;
+    text-align: left;
+}
+.container .description .point {
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #00A896;
+    width: 10px;
+    height: 10px;
+}
+.container .description .point.doping {
+    background-color: #E84855;
+}
+
+@media (max-width: 1070px) {
+    .container .description {
+        float: none;
+        width: 940px;
+        height: auto;
+    }
+    .container .description .points {
+        text-align: center;
+        padding-left: 0;
+    }
+}
+
 .tooltip {
     width: 160px;
     text-align: center;
     position: absolute;
     visibility: hidden;
+
     background-color: #ffffff;
     padding: 5px;
     border: 1px solid black;
@@ -16,14 +92,15 @@
     font-size: 10px;
 }
 .athlete {
-    fill: green;
+    fill: #00A896;
 }
 .athlete.doping {
-    fill: red;
+    fill: #E84855;
 }
-.athlete.active {
+.athlete-group.active .athlete {
     fill-opacity: 0.5;
 }
+
 
 .axis text {
     font: 10px sans-serif;
